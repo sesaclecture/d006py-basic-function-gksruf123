@@ -1,26 +1,42 @@
 def add(a, b):
-    pass
+    return a + b
 
 
 def sub(a, b):
-    pass
+    return a - b
 
 
 def mul(a, b):
-    pass
+    return a * b
 
 
 def div(a, b):
-    pass
+    if a == 0 or b == 0:
+        return False
+    else:
+        return a / b
 
 
 def power(base, pow):
-    pass
+    if pow == 0:
+        return 1
+    else:
+        return base ** pow
 
 
 def square(base):
-    pass
+    if base == 0:
+        return False
+    else:
+        a = base ** 0.5
+        return a
 
 
 def greet(이름="낯선자", 나이=20):
-    pass
+    if 나이 >= 50:
+        print(f"안녕하십니까 {이름}!")
+    elif 나이 < 20:
+        print(f"안녕 {이름}!")
+    else:
+        print(f"안녕하신가 {이름}!")
+    
